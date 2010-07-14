@@ -28,13 +28,13 @@ class ImagemakeComponent extends Object {
 
         switch ($imagetype) {
             case IMAGETYPE_GIF:
-                $image = ImageCreateFromGIF($tmpFilePath);
+                $image = ImageCreateFromGIF($imagePath);
                 break;
             case IMAGETYPE_JPEG:
-                $image = ImageCreateFromJPEG($tmpFilePath);
+                $image = ImageCreateFromJPEG($imagePath);
                 break;
             case IMAGETYPE_PNG:
-                $image = ImageCreateFromPNG($tmpFilePath);
+                $image = ImageCreateFromPNG($imagePath);
                 break;
             default :
                 return false;
